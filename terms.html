@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Terms of Service | The Prayer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Terms of Service for The Prayer App" />
+    <style>
+        :root {
+            --bg: #070b14;
+            --panel: rgba(255, 255, 255, 0.06);
+            --text: rgba(255, 255, 255, 0.92);
+            --muted: rgba(255, 255, 255, 0.72);
+            --soft: rgba(255, 255, 255, 0.12);
+            --brandA: #8b5cf6;
+            --brandC: #06b6d4;
+            --warning: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(1200px 600px at 20% 0%, rgba(139, 92, 246, 0.15), transparent 55%),
+                radial-gradient(1000px 600px at 90% 10%, rgba(6, 182, 212, 0.12), transparent 55%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Nav */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 30px;
+            border-bottom: 1px solid var(--soft);
+            margin-bottom: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--brandA), var(--brandC));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo:before {
+            content: "";
+            position: absolute;
+            inset: -40% -40%;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), transparent 45%);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* Content */
+        h1 {
+            font-size: 32px;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .intro {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--soft);
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 32px 0 12px;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: var(--muted);
+            margin: 0 0 14px;
+            font-size: 15px;
+        }
+
+        ul {
+            color: var(--muted);
+            margin: 0 0 16px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: var(--panel);
+            border-left: 3px solid var(--brandA);
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 14px;
+        }
+
+        .highlight strong {
+            color: var(--text);
+        }
+
+        .highlight.warning {
+            border-left-color: var(--warning);
+            background: rgba(245, 158, 11, 0.08);
+        }
+
+        .legal {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(6, 182, 212, 0.08));
+            border: 1px solid var(--soft);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .contact-box p {
+            margin: 0 0 8px;
+        }
+
+        .contact-box .company {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="brand">
+                <div class="logo"></div>
+                <span>The Prayer App</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </nav>
+
+        <h1>Terms of Service</h1>
+        <p class="updated"><strong>Last Updated:</strong> December 22, 2024</p>
+
+        <p class="intro">
+            These Terms of Service ("Terms") govern your use of The Prayer App ("the App"), operated by Moore Apps
+            Limited Liability Company. By downloading, accessing, or using the App, you agree to be bound by these
+            Terms.
+        </p>
+
+        <h2>Purpose of the App</h2>
+        <p>
+            The Prayer App provides personalized Christian prayers, decrees, affirmations, Bible-based encouragement,
+            and audio reflections designed to support your spiritual life and faith journey.
+        </p>
+        <p>The App is intended for personal inspiration and devotional use only.</p>
+
+        <h2>Eligibility</h2>
+        <p>
+            You must be at least 13 years old to use the App. By using the App, you represent that you meet this
+            requirement. If you are under 18, you represent that you have your parent or guardian's permission.
+        </p>
+
+        <h2>User Accounts</h2>
+        <p>To access certain features, you must create an account. You agree to:</p>
+        <ul>
+            <li>Provide accurate and current information</li>
+            <li>Keep your password secure and confidential</li>
+            <li>Notify us immediately of unauthorized access</li>
+            <li>Accept responsibility for all activity under your account</li>
+        </ul>
+        <p>We may suspend or terminate accounts that violate these Terms.</p>
+
+        <h2>Subscriptions and Payments</h2>
+        <p>The App offers both free and premium subscription tiers.</p>
+        <ul>
+            <li>Subscriptions are billed in advance on a recurring basis (monthly or yearly)</li>
+            <li><strong>Subscriptions automatically renew</strong> unless cancelled before the renewal date</li>
+            <li>You may cancel anytime through your device's app store settings</li>
+        </ul>
+        <p>
+            All payments are processed through Apple App Store or Google Play Store. Their terms govern billing,
+            renewals, refunds, and cancellations. For refund requests, contact Apple or Google directly.
+        </p>
+
+        <h2>Dynamic Content</h2>
+        <p>
+            Some prayers, decrees, affirmations, and audio reflections are created dynamically using guided tools based
+            on themes and categories you select. This content is provided solely for spiritual encouragement.
+        </p>
+
+        <h2>No Professional Advice</h2>
+        <div class="highlight warning">
+            <strong>The App does not provide and is not a substitute for:</strong>
+            <ul style="margin-bottom: 0; margin-top: 10px;">
+                <li>Medical or health advice</li>
+                <li>Mental health counseling or therapy</li>
+                <li>Legal or financial advice</li>
+                <li>Professional pastoral counseling</li>
+            </ul>
+        </div>
+        <p>
+            If you are experiencing a crisis or need professional support, please consult a qualified healthcare
+            provider, counselor, or appropriate professional.
+        </p>
+
+        <h2>Acceptable Use</h2>
+        <p>You agree to use the App only for lawful purposes. When submitting prayer requests, you agree not to provide
+            content that is:</p>
+        <ul>
+            <li>Abusive, threatening, or harassing</li>
+            <li>Hateful or promotes violence</li>
+            <li>Illegal or promotes illegal activity</li>
+            <li>Sexually explicit or obscene</li>
+            <li>Spam or commercial solicitation</li>
+        </ul>
+        <p>We reserve the right to remove content and restrict access for violations.</p>
+
+        <h2>Intellectual Property</h2>
+        <p>
+            The App, including its design, code, graphics, and content, is owned by Moore Apps Limited Liability Company
+            and protected by intellectual property laws.
+        </p>
+        <p>You may not:</p>
+        <ul>
+            <li>Copy, modify, or distribute the App or its content</li>
+            <li>Reverse engineer or decompile the App</li>
+            <li>Use the App for commercial purposes without permission</li>
+        </ul>
+
+        <h2>Your Content</h2>
+        <p>
+            Prayers and content you generate through your own requests are yours. You retain ownership of personal
+            prayer requests you submit. We do not claim ownership of your personal prayers or share them publicly.
+        </p>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p class="legal">
+            THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.
+        </p>
+        <p>We do not warrant that the App will be uninterrupted, error-free, or meet your expectations.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p class="legal">
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, MOORE APPS LIMITED LIABILITY COMPANY SHALL NOT BE LIABLE FOR ANY
+            INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.
+        </p>
+        <p>
+            This includes damages from use or inability to use the App, interpretation of spiritual content, service
+            interruptions, or reliance on dynamically generated content.
+        </p>
+
+        <h2>Indemnification</h2>
+        <p>
+            You agree to indemnify and hold harmless Moore Apps Limited Liability Company from any claims, damages, or
+            expenses arising from your use of the App or violation of these Terms.
+        </p>
+
+        <h2>Termination</h2>
+        <p>
+            We may suspend or terminate your access if you violate these Terms. You may stop using the App and delete
+            your account at any time.
+        </p>
+
+        <h2>Governing Law</h2>
+        <p>
+            These Terms are governed by the laws of the State of Michigan, United States, without regard to conflict of
+            law principles. Any disputes shall be resolved in the state or federal courts located in Michigan.
+        </p>
+
+        <h2>Changes to Terms</h2>
+        <p>
+            We may update these Terms from time to time. Continued use of the App after changes are posted constitutes
+            acceptance. If you do not agree, you must stop using the App.
+        </p>
+
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p>Questions about these Terms?</p>
+            <p><a href="mailto:support@trytheprayerapp.com">support@trytheprayerapp.com</a></p>
+            <p class="company">Moore Apps Limited Liability Company<br>Michigan, United States</p>
+        </div>
+
+        <footer>
+            <div>© <span id="year"></span> The Prayer App. All rights reserved.</div>
+            <div>
+                <a href="index.html">Home</a> ·
+                <a href="privacy.html">Privacy</a> ·
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

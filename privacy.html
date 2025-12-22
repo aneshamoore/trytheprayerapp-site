@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy | The Prayer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy Policy for The Prayer App" />
+    <style>
+        :root {
+            --bg: #070b14;
+            --panel: rgba(255, 255, 255, 0.06);
+            --text: rgba(255, 255, 255, 0.92);
+            --muted: rgba(255, 255, 255, 0.72);
+            --soft: rgba(255, 255, 255, 0.12);
+            --brandA: #8b5cf6;
+            --brandC: #06b6d4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(1200px 600px at 20% 0%, rgba(139, 92, 246, 0.15), transparent 55%),
+                radial-gradient(1000px 600px at 90% 10%, rgba(6, 182, 212, 0.12), transparent 55%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Nav */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 30px;
+            border-bottom: 1px solid var(--soft);
+            margin-bottom: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--brandA), var(--brandC));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo:before {
+            content: "";
+            position: absolute;
+            inset: -40% -40%;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), transparent 45%);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* Content */
+        h1 {
+            font-size: 32px;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .intro {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--soft);
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 32px 0 12px;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: var(--muted);
+            margin: 0 0 14px;
+            font-size: 15px;
+        }
+
+        ul {
+            color: var(--muted);
+            margin: 0 0 16px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: var(--panel);
+            border-left: 3px solid var(--brandA);
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 14px;
+        }
+
+        .highlight strong {
+            color: var(--text);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(6, 182, 212, 0.08));
+            border: 1px solid var(--soft);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .contact-box p {
+            margin: 0 0 8px;
+        }
+
+        .contact-box .company {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="brand">
+                <div class="logo"></div>
+                <span>The Prayer App</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="terms.html">Terms</a>
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </nav>
+
+        <h1>Privacy Policy</h1>
+        <p class="updated"><strong>Last Updated:</strong> December 22, 2025</p>
+
+        <p class="intro">
+            This Privacy Policy explains how The Prayer App ("we," "us," or "our"), operated by Moore Apps Limited
+            Liability Company, collects, uses, and protects your information when you use our mobile application and
+            website.
+        </p>
+
+        <h2>Information We Collect</h2>
+        <p>We collect information you provide when creating an account or using the app:</p>
+        <ul>
+            <li>Name and email address</li>
+            <li>Password (encrypted and never visible to us)</li>
+            <li>Location (city/state or general region, if provided)</li>
+            <li>Device-based geolocation (with your permission)</li>
+            <li>Birthday (optional)</li>
+        </ul>
+
+        <p>We also collect usage and activity data:</p>
+        <ul>
+            <li>Saved prayers, decrees, and audio reflections</li>
+            <li>Prayer history and categories used</li>
+            <li>Subscription level and status</li>
+            <li>App usage patterns</li>
+            <li>Device type, operating system, and unique device identifiers</li>
+            <li>Push notification tokens</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>We do not collect</strong> payment card information, Social Security numbers, or other sensitive
+            government identifiers. All purchases are processed securely by Apple or Google.
+        </div>
+
+        <h2>Dynamic Prayer Content</h2>
+        <p>
+            Some prayers, decrees, affirmations, and audio reflections are created dynamically using secure guided tools
+            based on themes or requests you choose.
+        </p>
+        <p>These tools only receive:</p>
+        <ul>
+            <li>The prayer topic or category you select</li>
+            <li>The theme or tone you choose</li>
+            <li>Your written prayer request (if provided)</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>We never send</strong> your name, email, location, or any personal identity
+            information to content generation services.
+        </div>
+
+        <h2>Audio Generation</h2>
+        <p>
+            When you use the voice reader feature, audio is generated using secure text-to-speech services. Only the
+            prayer text is sent—no personal information. Generated audio may be cached to improve playback performance
+            and can be deleted at any time.
+        </p>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Create and maintain your account</li>
+            <li>Generate personalized prayers based on your selections</li>
+            <li>Save your prayers, audio, and activity</li>
+            <li>Process subscriptions and premium features</li>
+            <li>Send push notifications (with your permission)</li>
+            <li>Improve app performance and features</li>
+            <li>Display advertisements (free tier users only)</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>We do not sell or rent your personal information.</strong>
+        </div>
+
+        <h2>Advertising</h2>
+        <p>
+            The free version of the app displays advertisements provided by Google AdMob. To show relevant ads, AdMob
+            may collect device advertising identifiers (IDFA on iOS, GAID on Android), general location, and app
+            interaction data.
+        </p>
+        <p>You can limit ad tracking through your device settings:</p>
+        <ul>
+            <li><strong>iOS:</strong> Settings → Privacy & Security → Tracking</li>
+            <li><strong>Android:</strong> Settings → Privacy → Ads</li>
+        </ul>
+        <p>
+            Premium subscribers do not see advertisements. For more information, see <a
+                href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+        </p>
+
+        <h2>Third-Party Services</h2>
+        <p>We use trusted third-party services to operate the app:</p>
+        <ul>
+            <li><strong>Firebase (Google)</strong> — Authentication, database, storage, analytics, push notifications
+            </li>
+            <li><strong>Google Cloud</strong> — Audio generation services</li>
+            <li><strong>Google AdMob</strong> — Advertising for free tier users</li>
+            <li><strong>RevenueCat</strong> — Subscription management</li>
+            <li><strong>Apple App Store / Google Play</strong> — Payment processing</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <p>
+            We use reasonable technical and administrative safeguards including encrypted passwords, secure database
+            storage, HTTPS encryption, and restricted access controls. No system is 100% secure, but we take data
+            protection seriously.
+        </p>
+
+        <h2>Your Rights and Choices</h2>
+        <p>You may:</p>
+        <ul>
+            <li>Access, update, or correct your profile</li>
+            <li>Delete saved prayers and audio</li>
+            <li>Opt out of push notifications</li>
+            <li>Limit ad tracking through device settings</li>
+            <li>Manage subscriptions through your app store</li>
+            <li>Request complete account deletion</li>
+        </ul>
+        <p>
+            <strong>California Residents (CCPA):</strong> You have the right to know what personal information we
+            collect, request deletion, and opt out of the sale of personal information. We do not sell personal
+            information.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+            We retain your personal information while your account is active. If you delete your account, we will delete
+            your data within 30 days, except where required for legal purposes.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+            The app is not intended for users under 13. We do not knowingly collect information from children under 13.
+            If we discover such information, we will delete it promptly.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Continued use of the app means you accept any changes.
+        </p>
+
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p>Questions about this Privacy Policy?</p>
+            <p><a href="mailto:support@trytheprayerapp.com">support@trytheprayerapp.com</a></p>
+            <p class="company">Moore Apps Limited Liability Company<br>Michigan, United States</p>
+        </div>
+
+        <footer>
+            <div>© <span id="year"></span> The Prayer App. All rights reserved.</div>
+            <div>
+                <a href="index.html">Home</a> ·
+                <a href="terms.html">Terms</a> ·
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
