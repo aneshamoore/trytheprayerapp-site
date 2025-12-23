@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Delete Account | The Prayer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How to delete your account on The Prayer App" />
+    <style>
+        :root {
+            --bg: #070b14;
+            --panel: rgba(255, 255, 255, 0.06);
+            --text: rgba(255, 255, 255, 0.92);
+            --muted: rgba(255, 255, 255, 0.72);
+            --soft: rgba(255, 255, 255, 0.12);
+            --brandA: #8b5cf6;
+            --brandC: #06b6d4;
+            --warning: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(1200px 600px at 20% 0%, rgba(139, 92, 246, 0.15), transparent 55%),
+                radial-gradient(1000px 600px at 90% 10%, rgba(6, 182, 212, 0.12), transparent 55%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Nav */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 30px;
+            border-bottom: 1px solid var(--soft);
+            margin-bottom: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* Content */
+        h1 {
+            font-size: 32px;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .intro {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--soft);
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 32px 0 12px;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            color: var(--muted);
+            margin: 0 0 14px;
+            font-size: 15px;
+        }
+
+        ol,
+        ul {
+            color: var(--muted);
+            margin: 0 0 16px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .method-card {
+            background: var(--panel);
+            border: 1px solid var(--soft);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 20px 0;
+        }
+
+        .method-card h3 {
+            font-size: 16px;
+            margin: 0 0 16px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .method-number {
+            background: linear-gradient(135deg, var(--brandA), var(--brandC));
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .steps {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 12px;
+        }
+
+        .steps ol {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .steps li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: var(--panel);
+            border-left: 3px solid var(--brandA);
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 14px;
+        }
+
+        .highlight strong {
+            color: var(--text);
+        }
+
+        .highlight.warning {
+            border-left-color: var(--warning);
+            background: rgba(239, 68, 68, 0.08);
+        }
+
+        .email-link {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.15));
+            border: 1px solid var(--soft);
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(6, 182, 212, 0.08));
+            border: 1px solid var(--soft);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .contact-box p {
+            margin: 0 0 8px;
+        }
+
+        .contact-box .company {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--soft);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="brand">
+                <img src="prayer-app-icon.png" alt="The Prayer App" class="logo" />
+                <span>The Prayer App</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </nav>
+
+        <h1>Delete Your Account</h1>
+
+        <p class="intro">
+            We're sorry to see you go. If you wish to delete your account and all associated data from The Prayer App,
+            you can do so using one of the methods below.
+        </p>
+
+        <div class="highlight warning">
+            <strong>Important:</strong> Account deletion is permanent. All your saved prayers, decrees, preferences, and
+            account information will be permanently removed and cannot be recovered.
+        </div>
+
+        <h2>How to Delete Your Account</h2>
+        <p>Choose the method that works best for you:</p>
+
+        <div class="method-card">
+            <h3><span class="method-number">1</span> Delete from Within the App (Recommended)</h3>
+            <p>The fastest way to delete your account is directly through the app:</p>
+            <div class="steps">
+                <ol>
+                    <li>Open <strong>The Prayer App</strong> on your device</li>
+                    <li>Tap the <strong>menu icon</strong> (☰) in the top corner</li>
+                    <li>Select <strong>"Account"</strong> from the menu</li>
+                    <li>Scroll down and tap <strong>"Delete Account"</strong></li>
+                    <li>Confirm your decision when prompted</li>
+                </ol>
+            </div>
+            <p style="margin-top: 16px; margin-bottom: 0;">Your account and all associated data will be deleted
+                immediately.</p>
+        </div>
+
+        <div class="method-card">
+            <h3><span class="method-number">2</span> Request Deletion via Email</h3>
+            <p>If you no longer have access to the app or are unable to delete your account through the app, you can
+                request account deletion by email:</p>
+            <div class="steps">
+                <ol>
+                    <li>Send an email from the <strong>same email address</strong> you used to register your account
+                    </li>
+                    <li>Include the subject line: <strong>"Account Deletion Request"</strong></li>
+                    <li>In the body, confirm that you wish to permanently delete your account</li>
+                </ol>
+            </div>
+            <a href="mailto:support@trytheprayerapp.com?subject=Account%20Deletion%20Request" class="email-link">
+                support@trytheprayerapp.com
+            </a>
+            <p style="margin-top: 16px; margin-bottom: 0; font-size: 14px;">
+                Email requests are processed within <strong>7 business days</strong> after we verify ownership of the
+                account. You will receive a confirmation email once your account has been deleted.
+            </p>
+        </div>
+
+        <h2>What Gets Deleted</h2>
+        <p>When you delete your account, the following personal data is permanently removed from our systems:</p>
+        <ul>
+            <li>Your profile information (name, email, account credentials)</li>
+            <li>Personal preferences and settings</li>
+            <li>Saved prayers and decrees linked to your account</li>
+            <li>Audio reflections and saved content</li>
+            <li>Prayer history associated with your account</li>
+        </ul>
+
+        <p style="font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 16px;">
+            Anonymized, non-personal data such as aggregated usage statistics may be retained to help us improve the app
+            experience for all users. This data cannot be used to identify you.
+        </p>
+
+        <div class="highlight">
+            <strong>Note about subscriptions:</strong> Deleting your account does not automatically cancel any active
+            subscriptions. Please cancel your subscription through your device's app store before or after deleting your
+            account to avoid future charges.
+        </div>
+
+        <h2>Questions?</h2>
+        <div class="contact-box">
+            <p>If you have any questions about account deletion or need assistance, please contact us:</p>
+            <p><a href="mailto:support@trytheprayerapp.com">support@trytheprayerapp.com</a></p>
+            <p class="company">Moore Apps Limited Liability Company<br>Michigan, United States</p>
+        </div>
+
+        <footer>
+            <div>© <span id="year"></span> The Prayer App. All rights reserved.</div>
+            <div>
+                <a href="index.html">Home</a> ·
+                <a href="privacy.html">Privacy</a> ·
+                <a href="terms.html">Terms</a> ·
+                <a href="mailto:support@trytheprayerapp.com">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
