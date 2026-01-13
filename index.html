@@ -197,7 +197,72 @@
       max-width: 56ch;
     }
 
+    .hero-actions {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      margin-top: 18px;
+    }
 
+    .store-badge {
+      display: flex;
+      align-items: center;
+      background: #000;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      overflow: hidden;
+      transition: all 0.2s ease;
+      width: fit-content;
+    }
+
+    .store-badge:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .badge-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+    }
+
+    .badge-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .badge-text .small {
+      font-size: 10px;
+      opacity: 0.9;
+      line-height: 1.2;
+    }
+
+    .badge-text .large {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .divider {
+      width: 1px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .qr-section {
+      padding: 6px 10px;
+    }
+
+    .qr-code {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+      display: block;
+    }
 
     .badges {
       display: flex;
@@ -401,99 +466,14 @@
         transform: rotate(2deg);
       }
 
-      .store-link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .qr-code {
-        width: 120px;
-        height: 120px;
-        border-radius: 8px;
-      }
-
-      /* Store Badges with QR Codes */
-      .hero-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 18px;
+      .qr-section,
+      .divider {
+        display: none;
       }
 
       .store-badge {
-        display: flex;
-        align-items: center;
-        background: #000;
-        border: 1.5px solid rgba(255, 255, 255, 0.2);
-        border-radius: 12px;
-        text-decoration: none;
-        color: white;
-        overflow: hidden;
-        transition: all 0.2s ease;
-        width: fit-content;
-      }
-
-      .store-badge:hover {
-        border-color: rgba(255, 255, 255, 0.4);
-        transform: translateY(-2px);
-        text-decoration: none;
-      }
-
-      .badge-content {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 16px;
-      }
-
-      .badge-text {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .badge-text .small {
-        font-size: 10px;
-        opacity: 0.9;
-        line-height: 1.2;
-      }
-
-      .badge-text .large {
-        font-size: 17px;
-        font-weight: 600;
-        line-height: 1.2;
-      }
-
-      .divider {
-        width: 1px;
-        height: 50px;
-        background: rgba(255, 255, 255, 0.15);
-      }
-
-      .qr-section {
-        padding: 6px 10px;
-      }
-
-      .qr-code {
-        width: 50px;
-        height: 50px;
-        border-radius: 4px;
-        display: block;
-      }
-
-      /* Mobile: hide QR codes */
-      @media (max-width: 620px) {
-
-        .qr-section,
-        .divider {
-          display: none;
-        }
-
-        .store-badge {
-          width: 100%;
-          justify-content: center;
-        }
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -555,7 +535,7 @@
               </div>
             </a>
 
-            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.mooreapps.theprayerapp&hl=en"
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.mooreapps.theprayerapp"
               aria-label="Get it on Google Play">
               <div class="badge-content">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
